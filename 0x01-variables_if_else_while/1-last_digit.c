@@ -7,7 +7,7 @@
  *
  * Description: print the value of n status
  *
- *Return: 0 (success)
+ *Return: 0 (success)*/
 */
 
 int main(void)
