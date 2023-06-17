@@ -16,8 +16,8 @@ int main(void)
 	/*prints a - z*/
 	while (ch <= 'z')
 	{
-	ptchar(ch);
-	ch++;
+		ptchar(ch);
+		ch++;
 	}
 
 	/*print A - Z*/
