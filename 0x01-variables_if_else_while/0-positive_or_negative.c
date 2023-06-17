@@ -3,10 +3,11 @@
 #include <stdio.h>
 
 /**
- * main - Prints a random number and states whether
- *        it is positive, negative, or zero.
+ * main - entry point
  *
- * Return: Always 0.
+ * Description:postivie or negative 
+ *
+ * Retun : 0 (success)
 */
 int main(void)
 {
@@ -14,13 +15,13 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
-	if (n > 0)
-		printf("%d is positive\n", n);
-	else if (n < 0)
-		printf("%d is negative\n", n);
+	if(n>0)
+		printf("%i is postitive\n",n);
+	else if (n== 0)
+		printf("%i is zero\n",n);
 	else
-		printf("%d is zero\n", n);
-
+		printf("%i is negative\n",n);
 	return (0);
 }
+
+	
