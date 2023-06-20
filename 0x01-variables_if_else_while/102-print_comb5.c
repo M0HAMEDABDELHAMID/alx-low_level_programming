@@ -1,35 +1,31 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Return: Always 0 (success)
-*/
-
+ * main - entry point
+ *
+ * Return: always 0
+ */
 int main(void)
 {
-	int i;
-	int j;
+	int c, c_two;
 
-	for (i = 0; j < 100; j++)
+	for (c = 0; c <= 98; c++)
 	{
-		for (j = i; j < 100; j++)
+		for (c_two = c + 1; c_two <= 99; c_two++)
 		{
-			if (i != j)
+			putchar('0' + c / 10);
+			putchar('0' + c % 10);
+			putchar(32);
+			putchar('0' + c_two / 10);
+			putchar('0' + c_two % 10);
+			if (c / 10 != 9 || c % 10 != 8)
 			{
-				putchar(i / 10 + '0');
-				putchar(i % 10 + '0');
-				putchar(' ');
-				putchar(j / 10 + '0');
-				putchar(j % 10 + '0');
-				if (i != 98 || j != 99)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(44);
+				putchar(32);
 			}
 		}
 	}
-	putchar('\n');
 
+	putchar(10);
 	return (0);
 }
